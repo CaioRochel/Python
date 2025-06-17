@@ -1,0 +1,324 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>BloodCare</title>
+
+	<link rel="icon" href="icone.ico">
+
+
+
+<!-- NÃO MEXER-->
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="css/cssCONTATO.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">  </script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+<!-- Isso faz a conexão com a folha de estilo-->
+	<link rel="stylesheet" href="css/css.css">
+
+
+</head>
+
+<!-- COMEÇANDO A NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #000000;">
+
+  <a class="navbar-brand" href="#">
+    <img src="fotos/Logo.png" width="140" height="60" class="d-inline-block align-top" alt="">
+  </a>
+   
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link " href="home.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="contato.html">Contato</a>
+      <a class="nav-item nav-link" href="sobrenos.html">Sobre Nós</a>
+      <a class="nav-item nav-link" href="requisitos.html">Requisitos</a>  
+      <a class="nav-item nav-link" href="#">Doar</a>  
+
+    </div>
+  
+
+    </div>
+
+      <div class="dropdown show" style="position: relative; left: -2%">
+       <a class="nav-link dropdown-toggle btn btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style= "position:relative; right:initial;"> 
+          <span style="color: #ffffff;">Cadastro</span>
+        </a>  
+        <div style= "" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+          <a class="dropdown-item" href="../Pagina login e cadastro/cadastro/cadastro_hospital/cadastrohospital.php">Hospital</a>
+
+          <a class="dropdown-item" href="../Pagina login e cadastro/cadastro/cadastro_doador/cadastrodoador.php">Doador</a>
+        </div>
+  </div>
+
+
+
+  	  <div class="dropdown show">
+       <a class="nav-link dropdown-toggle btn btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style= "position:relative; right:initial;"> 
+          <span style="color: #ffffff;">Login</span>
+        </a>  
+        <div style= "" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+          <a class="dropdown-item" href="../Pagina login e cadastro/login/login_hospital/loginhospital.php">Hospital</a>
+
+          <a class="dropdown-item" href="../Pagina login e cadastro/login/login_doador/logindoador.php">Doador</a>
+        </div>
+  </div>
+
+    
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  </nav>
+<!-- ACABANDO A NAVBAR -->
+
+<div id="particles-js" style=" display: flex; align-items: center; justify-content: center;"> 
+  
+
+<div class="well " style=" align-items ">
+
+  <h3 class="font-weight-light" style="text-align: center; margin-top: 10px">Contato!</h3>
+  <hr style="margin-left: 30px ; margin-right: 30px">
+<center>
+
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+<input type="hidden" name="recipient" value="tccbarai2020@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+<input type="hidden" name="redirect" value=""> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+<input type="hidden" name="subject" value="CONTATO DO TCC">  <!-- Assunto da mensagem -->
+<input type="hidden" name="email" value="tccbarai2020@gmail.com">   <!-- Dev
+ e ser uma conta de email ativa em seu domínio -->
+
+<div class="form-group">
+  <label for="inputEmail" class=" lead col-md-3 control-label">Nome:</label>
+  <div class="col-md-8">
+      <input type="text" name="nome" class="form-control input-md" placeholder="Nome Completo" required='true'/>
+  </div>
+</div>    
+
+
+<div class="form-group " >
+  <label for="email" class="col-md-3 control-label lead">Email:</label>
+  <div class="col-md-8">
+      <input type="text" name="E-mail" class="form-control input-md" placeholder="Digite seu Email"  required='true'/>
+  </div>
+</div>
+
+<div class="form-group">
+    <label for="email" class=" col-md-3 control-label lead"  >Nota:</label>
+    <div class="col-md-8">
+      <textarea style="top: 3px; height:9em; float: right; resize: none " type="text" name="Comentarios" class="form-control input-md" placeholder="Digite aqui!"  required='true'/></textarea>  
+    </div>          
+</div>
+
+
+<div class="container" >
+  <div class="row" >
+ 
+  <input class="btn btn-lg btn-primary " type="submit" name="BTEnvia" value="Enviar" style="width:50%; margin: 0 auto; background-color:#dc3545; border-color: #dc3545"> 
+  
+
+  <input class="btn btn-lg btn-primary " type="reset" name="BTApaga" value="Apagar" style="width:25%; margin: 0 auto; background-color:#dc3545; border-color: #dc3545"> 
+  </div>          
+</div>
+</div>
+<div class="footer1">
+         Copyright© 2020 | BloodCare® | Todos Direitos Reservados
+</div>
+
+
+
+
+<style type="text/css">
+@media only screen and (max-width: 766px) {
+  .well {
+    width: 30em;
+  }
+
+.form-control { 
+  top: 3px;  
+  height:3em;
+  width: 100%;
+  float: right;
+}
+
+label {
+  position: absolute;
+  right: 40%;
+}
+
+textarea {
+  width: 10%;
+  left:100px; 
+
+}
+
+</style>
+
+<!-- Efeito de fundo -->
+<script type="text/javascript">
+  
+  particlesJS("particles-js", {
+  particles: {
+    number: { value: 28, density: { enable: false, value_area: 800 } },
+    color: { value: "#ff0000" },
+    shape: {
+      type: "circle",
+      stroke: { width: 0, color: "#000000" },
+      polygon: { nb_sides: 5 },
+      image: { src: "img/github.svg", width: 100, height: 100 }
+    },
+    opacity: {
+      value: 1,
+      random: false,
+      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+    },
+    size: {
+      value: 3,
+      random: false,
+      anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#000000",
+      opacity: 0.3,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 1200 }
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: { enable: false, mode: "repulse" },
+      onclick: { enable: false, mode: "push" },
+      resize: true
+    },
+    modes: {
+      grab: { distance: 400, line_linked: { opacity: 1 } },
+      bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+      repulse: { distance: 200, duration: 0.4 },
+      push: { particles_nb: 4 },
+      remove: { particles_nb: 2 }
+    }
+  },
+  retina_detect: false
+});
+
+update = function () {
+  stats.begin();
+  stats.end();
+  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+  }
+  requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+
+</script>
+
+<style type="text/css">
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  opacity: 0.5
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+
+</style>
+</body>
+</form>
+</div>
+</center>
+</div>
+
+
+</html>
+
+
+
+
+<!--
+<label for="email">Digite seu e-mail:</label>
+ <p> 
+ Nome:<br /> 
+ <input type="text" size="30" name="nome"> 
+ </p>   
+ 
+ <p>
+ E-mail:<br /> 
+ <input type="email" size="30" name="replyto"> 
+ </p>   
+ 
+
+ <label for="problema">Qual motivo do contato?</label>
+<select name="problema" id="problema" form="problemform">
+  <option value="problemas">Problemas</option>
+  <option value="sugestoes">Sugestoes</option>
+  <option value="duvidas">Duvidas</option>
+  <option value="outros">Outros</option>
+</select>
+
+
+ <p> 
+ Assunto:<br /> 
+ <input type="text" size="50" name="Comentarios"> 
+ </p>   
+--> 

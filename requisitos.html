@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BloodCare</title>
+
+  <link rel="icon" href="icone.ico">
+
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+	<link rel="stylesheet" href="css/cssREQ.css">
+  <link rel="icon" href="icone.ico">
+
+  
+</head>
+<body class="home">
+
+
+  <!-- COMEÇANDO A NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #000000;">
+      <a class="navbar-brand" href="#">
+        <img src="fotos/Logo.png" width="140" height="60" class="d-inline-block align-top" alt="">
+          </a>
+   
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link " href="home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="contato.html">Contato</a>
+                <a class="nav-item nav-link" href="sobrenos.html">Sobre Nós</a>
+                <a class="nav-item nav-link" href="#">Requisitos</a>  
+                <a class="nav-item nav-link" href="#">Doar</a>  
+              </div>
+            </div>
+              <div class="dropdown show" style="position: relative; left: -2%">
+                <a class="nav-link dropdown-toggle btn btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style= "position:relative; right:initial;"> 
+                <span style="color: #ffffff;">Cadastro</span>
+                </a>  
+                <div style= "" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="../Pagina login e cadastro/cadastro/cadastro_hospital/cadastrohospital.php">Hospital</a>
+                  <a class="dropdown-item" href="../Pagina login e cadastro/cadastro/cadastro_doador/cadastrodoador.php">Doador</a>
+                </div>
+              </div>
+          <div class="dropdown show">
+              <a class="nav-link dropdown-toggle btn btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style= "position:relative; right:initial;"> 
+                <span style="color: #ffffff;">Login</span>
+              </a>  
+            <div style= "" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../Pagina login e cadastro/login/login_hospital/loginhospital.php">Hospital</a>
+              <a class="dropdown-item" href="../Pagina login e cadastro/login/login_doador/logindoador.php">Doador</a>
+            </div>
+          </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+<!-- ACABANDO A NAVBAR -->
+
+
+ <style type="text/css"> 
+@media screen and (max-width: 613px) {
+ 
+.jumbinho{
+  padding-left: 0;
+}
+
+  
+</style>
+
+ <style type="text/css"> 
+@media screen and (max-width: 1000px) {
+.footer1{
+margin-top: 100px;
+
+}
+</style>
+
+
+ <style type="text/css"> 
+@media screen and (max-width: 750px) {
+.footer1{
+margin-top: 150px;
+
+}
+</style>
+
+
+ <style type="text/css"> 
+@media screen and (max-width: 490px) {
+.footer1{
+margin-top: 200px;
+
+}
+</style>
+
+<!-- EFEITOS BACKGROUND -->
+<div id="particles-js" style="background-repeat: repeat;"></div>
+
+<!-- JUMBOTRON CINZA PRINCIPAL -->
+  <div class="jumbinho">
+    <div class="jumbotron" style="position: absolute; ">
+        <div class="container">
+
+          <h1 class="display-4">O que é a doação de sangue?</h1>
+            <p class="lead">
+            A doação de sangue é um gesto solidário de doar uma pequena quantidade do próprio sangue para salvar a vida de pessoas que se submetem a tratamentos e intervenções médicas de grande porte e complexidade, como transfusões, transplantes, procedimentos oncológicos e cirurgias.
+            </p>
+        
+          <hr class="my-4">
+
+<div class="accordion" id="accordionExample">
+  
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button style="color:red" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Saúde e Condições Corporais
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        
+        <p>• Peso mínimo de 50Kg.</p>
+        <p>• Estar descansado (ter dormido pelo menos 6 horas nas últimas 24 horas).</p>
+        <p>• Estar alimentado (evitar alimentação gordurosa nas 4 horas que antecedem a doação).</p>
+        <p>• Ter entre 16 e 69 anos, desde que a primeira doação tenha sido feita até 60 anos.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button style="color:red" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Documentos Necessários
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        
+        <h6>• Documento original com foto recente emitido por órgão oficial, alguns exemplos sendo:</h6> <p>Carteira de Identidade, Cartão de Identidade de Profissional Liberal, Carteira de Trabalho e Previdência Social, Carteira Nacional de 
+        Habilitação e RNE-Registro Nacional de Estrangeiro.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button style="color:red" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Impedimentos Temporários
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">   
+        
+        <h6>• Intervalo entre doações:</h6><p> para homens 60 dias (máximo de 04 doações nos últimos 12 meses) e mulheres 90 dias (máximo de 03 doações nos últimos 12 meses).</p>
+        <h6>• Resfriado:</h6><p> aguardar 7 dias após desaparecimento dos sintomas.</p>
+        <h6>• Gravidez:</h6><p> 90 dias após parto normal e 180 dias após cesariana.</p>
+        <h6>• Amamentação:</h6><p> se o parto ocorreu há menos de 12 meses).</p>
+        <h6>• Ingestão de bebida alcoólica:</h6><p> nas 12 horas que antecedem a doação.</p>
+        <h6>• Tatuagem / maquiagem definitiva:</h6> <p>nos últimos 12 meses.</p>
+        <h6>• Situações nas quais há maior risco de adquirir doenças sexualmente transmissíveis:</h6> <p>aguardar 12 meses.</p>
+        <h6>• Qualquer procedimento endoscópico (endoscopia digestiva alta, colonoscopia, rinoscopia etc):</h6> <p>aguardar 6 meses.</p>
+        <h6>• Extração dentária (verificar uso de medicação) ou tratamento de canal (verificar medicação):</h6> <p>por 7 dias.</p>
+        <h6>• Cirurgia odontológica com anestesia geral:</h6> <p>por 4 semanas.</p>
+
+        <h6>• Acupuntura:</h6><h6> →Se realizada com material descartável:</h6> <p>24 horas;</p> <h6>→Se realizada com material sem condições de avaliação:</h6> <p>aguardar 12 meses.</p>
+
+        <h6>• Vacina contra gripe:</h6> <p>por 48 horas.</p>
+        <h6>• Herpes labial ou genital:</h6> <p>apto após desaparecimento total das lesões.</p>
+        <h6>• Herpes Zoster:</h6> <p>apto após 6 meses da cura (vírus Varicella Zoster).</p>
+        <h6>• Brasil:</h6> <p>estados como Acre, Amapá, Amazonas, Rondônia, Roraima, Maranhão, Mato Grosso, Pará e Tocantins são locais onde há alta prevalência de malária. Quem esteve nesses estados deve aguardar 12 meses para doar, após o retorno.</p>
+        <h6>• EUA:</h6> <p>quem esteve nesse país deve aguardar 30 dias para doar, após o retorno.</p>
+        <h6>• Europa:</h6> <p>quem morou na Europa após 1980, verificar aptidão para doação no (11) 4573-7800.</p>
+        <h6>• Malária:</h6> <p>quem esteve em países com alta prevalência de malária deve aguardar 12 meses após o retorno para doar. (critério semelhante ao dos estados brasileiros com prevalência elevada de malária).</p>
+        <h6>• Febre Amarela:</h6> <p>quem esteve em região onde há surto da doença deve aguardar 30 dias para doar, após o retorno; se tomou a vacina, deve aguardar 04 semanas; se contraiu a doença, deve aguardar 6 meses após recuperação completa (clínica e laboratorial).</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button style="color:red" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Impedimentos Definitivos
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        
+        <p>• Hepatite após os 11 anos de idade. </p>
+        <p>• Evidência clínica ou laboratorial das seguintes doenças infecciosas transmissíveis pelo sangue: Hepatites B e C, AIDS (vírus HIV), doenças associadas aos vírus HTLV I e II e Doença de Chagas.</p>
+        <p>• Uso de drogas ilícitas injetáveis.</p>
+        <p>• Contrair malária.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h2 class="mb-0">
+        <button style="color:red" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+           Vidas dependem de você!
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        
+        <p>Além de pessoas que submetem a procedimentos e intervenções médicas, o sangue também é indispensável para que pacientes com doenças crônicas graves - como Doença Falciforme e Talassemia - possam viver por mais tempo e com mais qualidade, além de ser de vital importância para tratar feridos em situações de emergência ou calamidades.</p>
+
+        <p>Uma única doação pode salvar até quatro vidas. Um simples gesto de amor e solidariedade pode gerar muitos sorrisos. Faça sua parte, independentemente de parentesco entre o doador e quem receberá a doação</p>
+
+        <p>O sangue é insubstituível e sem ele é impossível viver. Por isso, o Ministério da Saúde reforça periodicamente a importância de os brasileiros adotarem a cultura solidária da doação regular e espontânea de sangue.</p>
+
+        <p>O objetivo é manter os estoques de sangue sempre abastecidos e não apenas em datas específicas ou quando algum conhecido precisar.</p>
+
+        <p>Agora que você entende a importância deste ato de solidariedade, faça a sua parte. Vá ao hemocentro mais próximo e doe sangue regularmente.</p>  
+        
+      </div>
+    </div>
+  </div>
+  <hr class="my-4">
+  <h1 class="display-4">Sobre o número de doadores</h1>
+
+<p>
+No Brasil, segundo o Ministério da Saúde, 1,8% da população doa sangue com regularidade. Esse número fica um pouco abaixo dos 2% ideais definidos pela Organização Pan-Americana de Saúde (OPAS). Ou seja, por aqui, os bancos de sangue operam no limite. Quando falamos dos números mundiais, apenas uma fração dos 7 bilhões de pessoas elegíveis para doar sangue no mundo efetivamente o fazem.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer1">
+         Copyright© 2020 | BloodCare® | Todos Direitos Reservados
+</div>
+
+<script type="text/javascript">
+  
+  particlesJS("particles-js", {
+  particles: {
+    number: { value: 28, density: { enable: false, value_area: 800 } },
+    color: { value: "#ff0000" },
+    shape: {
+      type: "circle",
+      stroke: { width: 0, color: "#000000" },
+      polygon: { nb_sides: 5 },
+      image: { src: "img/github.svg", width: 100, height: 100 }
+    },
+    opacity: {
+      value: 1,
+      random: false,
+      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+    },
+    size: {
+      value: 3,
+      random: false,
+      anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#000000",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 1200 }
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: { enable: false, mode: "repulse" },
+      onclick: { enable: false, mode: "push" },
+      resize: true
+    },
+    modes: {
+      grab: { distance: 400, line_linked: { opacity: 1 } },
+      bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+      repulse: { distance: 200, duration: 0.4 },
+      push: { particles_nb: 4 },
+      remove: { particles_nb: 2 }
+    }
+  },
+  retina_detect: false
+});
+
+update = function () {
+  stats.begin();
+  stats.end();
+  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+  }
+  requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+
+</script>
+
+<style type="text/css">
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+
+</style>
+
+</body>
+</html>
+
